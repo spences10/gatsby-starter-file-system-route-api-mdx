@@ -5,7 +5,7 @@
   </a>
 </p>
 <h1 align="center">
-  Gatsby starter Chakra UI
+  Gatsby starter File System Route API with Chakra UI
 </h1>
 
 Based off of the [Gatsby Starter Default] template.
