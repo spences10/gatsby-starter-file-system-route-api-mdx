@@ -17,7 +17,7 @@ template.
 
 ```shell
 # create a new project
-gatsby new gatsby-starter-chakra-ui https://github.com/spences10/gatsby-starter-chakra-ui
+gatsby new gatsby-starter-chakra-ui https://github.com/spences10/gatsby-starter-file-system-route-api-mdx
 ```
 
 <!-- Links -->
