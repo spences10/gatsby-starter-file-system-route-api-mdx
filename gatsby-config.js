@@ -8,10 +8,41 @@ module.exports = {
     `@chakra-ui/gatsby-plugin`,
     `gatsby-plugin-react-helmet`,
     {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        extensions: [`.mdx`, `.md`],
+        // gatsbyRemarkPlugins: [
+        //   `gatsby-remark-autolink-headers`,
+        //   `gatsby-remark-copy-linked-files`,
+        //   `gatsby-remark-smartypants`,
+        //   {
+        //     resolve: `gatsby-remark-images`,
+        //     options: {
+        //       maxWidth: 1200,
+        //     },
+        //   },
+        //   {
+        //     resolve: `gatsby-remark-external-links`,
+        //     options: {
+        //       target: `_blank`,
+        //       rel: `noopener`,
+        //     },
+        //   },
+        // ],
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/content`,
       },
     },
     `gatsby-transformer-sharp`,
