@@ -1,0 +1,6 @@
+export * from './bash-svg'
+export * from './github-svg'
+export * from './html-svg'
+export * from './javascript-svg'
+export * from './react-svg'
+export * from './typescript-svg'
