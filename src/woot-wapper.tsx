@@ -1,4 +1,9 @@
-import { ChakraProvider, Text } from '@chakra-ui/react'
+import {
+  ChakraProvider,
+  ListItem,
+  Text,
+  UnorderedList,
+} from '@chakra-ui/react'
 import { MDXProvider } from '@mdx-js/react'
 import React from 'react'
 import Code from './components/code'
@@ -10,6 +15,11 @@ const components = {
   h4: props => <Text fontSize="1xl" {...props} />,
   p: props => <Text fontSize="xl" {...props} />,
   code: props => <Code {...props} />,
+  ul: props => (
+    <UnorderedList {...props}>
+      <ListItem {...props} />
+    </UnorderedList>
+  ),
 }
 
 export const wrapPageElement = ({ element }) => {
