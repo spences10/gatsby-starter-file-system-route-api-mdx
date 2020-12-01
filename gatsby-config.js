@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Chakra UI`,
+    title: `Gatsby File System Route API starter`,
     description: `Kick off your next, great Gatsby project with this Chakra UI starter.`,
     author: `@spences10`,
   },

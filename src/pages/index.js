@@ -1,4 +1,4 @@
-import { Heading, Link, Text } from '@chakra-ui/react'
+import { Box, Heading, Link, Text } from '@chakra-ui/react'
 import { Link as GatsbyLink } from 'gatsby'
 import React from 'react'
 import SEO from '../components/seo'
@@ -18,15 +18,25 @@ export default function IndexPage({ data }) {
       </Text>
       {posts.map(post => {
         return (
-          <Link
-            as={GatsbyLink}
-            textDecor="underline"
-            color="purple.500"
-            fontSize="xl"
-            to={post.slug}
+          <Box
+            as="article"
+            border="1px"
+            borderColor="#663399"
+            borderRadius="5px"
+            my="5"
+            p="5"
           >
-            <p>{post.frontmatter.title}</p>
-          </Link>
+            <Link
+              as={GatsbyLink}
+              textDecor=""
+              _hover={{ textDecor: 'underline' }}
+              fontSize="xl"
+              to={post.slug}
+            >
+              <Text fontSize="3xl">{post.frontmatter.title}</Text>
+              <Text fontSize="xl">{post.excerpt}</Text>
+            </Link>
+          </Box>
         )
       })}
       <Link
@@ -58,6 +68,7 @@ export const query = graphql`
       nodes {
         id
         slug
+        excerpt
         frontmatter {
           date
           title
