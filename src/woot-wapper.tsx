@@ -1,5 +1,6 @@
 import {
   ChakraProvider,
+  extendTheme,
   ListItem,
   Text,
   UnorderedList,
@@ -22,9 +23,16 @@ const components = {
   ),
 }
 
+const config = {
+  useSystemColorMode: true,
+  initialColorMode: 'dark',
+}
+
+const customTheme = extendTheme({ config })
+
 export const wrapPageElement = ({ element }) => {
   return (
-    <ChakraProvider resetCSS>
+    <ChakraProvider resetCSS theme={customTheme}>
       <MDXProvider components={components}>
         <Layout>{element}</Layout>
       </MDXProvider>
