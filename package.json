@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-chakra-ui",
+  "name": "gatsby-starter-file-system-route-api-mdx",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby and Chakra UI",
+  "description": "A simple starter to get up and developing quickly with Gatsby and File System Route API",
   "version": "0.1.0",
   "author": {
     "name": "Scott Spence",
@@ -11,7 +11,7 @@
   "keywords": [
     "gatsby"
   ],
-  "license": "0BSD",
+  "license": "MIT",
   "scripts": {
     "build": "gatsby build",
     "dev": "gatsby develop",
@@ -61,9 +61,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "git+https://github.com/spences10/gatsby-starter-file-system-route-api-mdx.git"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
-  }
+    "url": "https://github.com/spences10/gatsby-starter-file-system-route-api-mdx/issues"
+  },
+  "homepage": "https://github.com/spences10/gatsby-starter-file-system-route-api-mdx#readme"
 }
