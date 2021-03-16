@@ -1,18 +1,19 @@
-import { Text } from '@chakra-ui/react'
-import { MDXRenderer } from 'gatsby-plugin-mdx'
-import React from 'react'
+import { Text } from "@chakra-ui/react";
+import { graphql } from "gatsby";
+import { MDXRenderer } from "gatsby-plugin-mdx";
+import React from "react";
 
 export default function PostPage({ data }) {
   const {
     body,
     frontmatter: { title },
-  } = data.mdx
+  } = data.mdx;
   return (
     <>
       <Text fontSize="4xl">{title}</Text>
       <MDXRenderer>{body}</MDXRenderer>
     </>
-  )
+  );
 }
 
 export const query = graphql`
@@ -27,4 +28,5 @@ export const query = graphql`
       }
     }
   }
-`
+`;
+
